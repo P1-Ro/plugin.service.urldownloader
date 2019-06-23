@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.service.urldownloader" name="URL Downloader" version="1.0.0" provider-name="P1Ro">
+<addon id="script.playonkodi.urldownloader" name="URL Downloader" version="1.0.0" provider-name="P1Ro">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.requests" version="2.22.0"/>
+        <import addon="script.module.web-pdb" />
     </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
         <summary lang="en">Addon to download an URL to local directory via JSONRPC</summary>
         <language></language>
-        <description lang="en">Addon to download an URL to local directory via JSONRPC</description>
+        <description lang="en"></description>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
         <source></source>
         <forum></forum>
